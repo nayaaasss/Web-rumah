@@ -1,0 +1,713 @@
+body {
+    font-family: 'poppins', sans-serif;
+    background: #080808;
+}
+
+:root {
+    --green-color :#048853;
+    --bg-icon: #00985B;
+}
+
+/* z-index */
+.navbar {
+    z-index: 3;
+}
+
+.aksen-img {
+    z-index: 1;
+}
+
+.img-hero {
+    z-index: 1;
+    margin-right: 100px;
+    height: 10px;
+}
+
+* {  /*seluruh html*/
+    z-index: 2;
+}
+
+/* Navbar color */
+.nav-color{
+    background: #000;
+    transition: all ease-in-out .3s;
+}
+
+
+.button-primary {
+    width: 133px;
+    height: 40px;
+    background: transparent;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 400;
+    border: none;
+}
+
+.button-secondary {
+    width: 133px;
+    height: 40px;
+    background-color: #000;
+    border-color: #F3FFF4 !important;
+    color: #1ED760;
+    border: none;
+    font-size: 16px;
+    font-weight: 400;
+    border-radius: 8px;
+}
+
+/* hero section */
+
+#hero {
+    background: #000;
+    height: 100vh;
+    width: 100%;
+}
+
+.img-hero {
+    height: 100%;
+}
+
+.hero-tagline h1 {
+    color: #FFF;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 72px; /* 138.462% */
+}
+
+.hero-tagline p {
+    color: #FFF;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin-top: 20px;
+    margin-bottom: 60px;
+}
+
+.button-lg-primary {
+    width: 227px;
+    height: 70px;
+    cursor: pointer;
+    background-color: #FFF;
+    color: #1ED760;
+    border: none;
+    font-size: 16px;
+    font-weight: 700;
+    border-radius: 10px;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    box-shadow: rgb(0 0 0 / 5%) 0 0 8px;;
+    font-size: 15px;
+    transition: all 0.5s ease;
+}
+
+.button-lg-primary:hover {
+    letter-spacing: 3px;
+    background-color: #1ED760;
+    color: hsl(0, 0%, 100%);
+    box-shadow: rgb(116, 220, 98) 0px 7px 29px 0px;
+}
+
+.button-lg-primary:active {
+    letter-spacing: 3px;
+    background-color: hsla(147, 65%, 32%, 0.541);
+    color: hsl(0, 0%, 100%);
+    box-shadow: rgb(247, 247, 247) 0px 0px 0px 0px;
+    transform: translateY(10px);
+    transition: 100ms;
+}
+
+/* Layanan section */
+
+#layanan h2 {
+    color: #1ED760;
+    font-size: 48px;
+    font-weight: 600;
+    line-height: normal;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.sub-title {
+    color: #ffffff;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.card-layanan {
+    width: 95%;
+    height: 300px;
+    background: #fff;
+    padding: 40px;
+    border-radius: 5px;
+    box-shadow: 0 0 7px 3px rgba(0, 0, 0, 0.5);
+    transition: all ease-in-out .3s;
+    border-color: #1ED760;
+}
+
+.circle-icon {
+    width: 70px;
+    height: 70px;
+    border-radius: 50px;
+}
+
+.card-container-h2 h3{
+    color: #5E0488;
+    font-size: 24px;
+}
+
+.card-layanan p{
+    color: #000;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+/* hover */
+
+.card-layanan:hover {
+    background: linear-gradient(125deg, #1ED760 13.33%, #003915 87.73%); ; 
+    transform: translateY(-25px);
+    box-shadow:0 0 20px 12px rgb(14, 167, 67);
+}
+
+.card-layanan:hover .circle-icon {
+    background-color: #fff;
+}
+
+.card-layanan:hover h3 {
+    color: #FFF;
+}
+
+.card-layanan:hover p {
+    color: #FFF;
+}
+
+#layanan {
+    margin-bottom: 173px;
+}
+
+/* search */
+
+#search {
+    background-image: url(asset/john-matychuk-yeQ60WfL5Nk-unsplash.jpg);
+    /* filter: brightness(78%); */
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#search h2 {
+    color: #FFF;
+    text-align: center;
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+
+#search p {
+    color: #FFF;
+    text-align: center;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.input-cari {
+    height: 88px;
+}
+
+.input-cari .button-secondary {
+    width: 200px;
+    height: 88px;
+    background-color: rgba(225, 225, 225, 0.5);
+    color: var(--bg-icon);
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.input-cari .button-primary {
+    width: 135px;
+    height: 88px;
+    flex-shrink: 0;
+    background-color: var(--bg-icon);
+    border: none;
+    font-size: 30px;
+    border-radius: 0 10px 0 10px;
+}
+
+.nav-tabs {
+    border: none;
+}
+
+.nav-tabs .nav-link {
+    background-color: rgba(225, 225, 225, 0.5);
+    color: black;
+    border: none;
+    border-radius: 0 0 0 0;
+}
+
+.nav-tabs .nav-link.active {
+    background-color: rgba(225, 225, 225, 0.8);
+    color: var(--bg-icon);
+    font-weight: 500;
+    border-radius: 9px 0 0 0;
+}
+
+
+/* Rekomendasi section */
+
+
+.rekomendasi-title{
+    color: #1ED760;
+text-align: center;
+font-family: Poppins;
+font-size: 48px;
+font-style: normal;
+font-weight: 600;
+line-height: normal;
+margin-bottom: 10%;
+margin-top: 4%;
+}
+.card {
+    height: 460px;
+    width: 30%;
+    border: none;
+    cursor: pointer;
+    transition: transform 0.8s ease;
+}
+
+.card-body h4 {
+    color: #000;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+
+.card-body p {
+    color: #000;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.card-fasilitas {
+    background-color: #fff;
+    position: absolute;
+    right: 0;
+    left: 0;
+    bottom: 10px;
+}
+
+.card-fasilitas span {
+    font-weight: 500;
+    margin-top: 18px;
+    color: #000;
+}
+
+.card-fasilitas p {
+    font-size: 10px;
+}
+
+.card:hover {
+    background: transparent;
+    box-shadow:0 0 5px 5px rgb(55, 226, 83);
+    transform: rotate(0deg);
+    width: 80%;
+    transform: scale(0.9);
+}
+
+.card:hover .card-body h4 {
+    color: #FFF;
+}
+
+.card:hover .card-body p {
+    color: #fff;
+}
+
+/* fitur section */
+
+#fitur h2 {
+    font-size: 48px;
+    color: var(--bg-icon);
+}
+
+.button-fitur {
+    width: 238px;
+    height: 63px;
+    flex-shrink: 0;
+    background-color: var(--bg-icon);
+    border: none;
+    color: #fff;
+    font-style: 20px;
+}
+
+.card-fitur h5 {
+    color: #FFF;
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+
+.card-fitur span {
+    color: #fff;
+    font-size: 14px;
+}
+
+.card-fitur h6 {
+    color: #FFF;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+
+.card-fitur button {
+    background-color: var(--bg-icon);
+    color: #fff;
+    border: none;
+    width: 150px;
+    height: 45px;
+    font-size: 18px;
+}
+
+.card-fitur .overlay {
+    background: rgba(0, 0, 0, 0);
+    opacity: 0;
+    transition: all ease-in-out .3s;
+}
+
+.card-fitur .overlay:hover {
+    background-color: rgba(0, 0, 0, 0.6);
+    opacity: 1;
+}
+
+.button-arrow-left {
+    border: none;
+    border-radius: 50%;
+    width: 61px;
+    height: 61px;
+    background-color: var(--bg-icon);
+    padding: 0;
+}
+.button-arrow-right {
+    border: none;
+    border-radius: 50%;
+    width: 61px;
+    height: 61px;
+    background-color: var(--bg-icon);
+    padding: 0;
+}
+
+/* contact section */
+
+#contact {
+    background-image: url(asset/3d-background-spotify-icon_318923-140.avif);
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin-top: 158px;
+}
+
+#contact .overlay  {
+    background: rgba(0, 0, 0, 0.30);
+}
+
+#contact .container {
+    padding: 148px 0 148px 0;
+}
+
+#contact h3 {
+    color: #FFF;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    width: 441px;
+}
+
+#contact h6 {
+    color: #FFF;
+    font-family: Poppins;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+
+.kontak a {
+    color: #FFF;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 18px; /* 112.5% */
+    text-decoration: none;
+    margin-left: 17px;
+    display: inline-block;
+}
+
+.card-contact {
+    background-color: #050505;
+    width: 100%;
+    height: 445px;
+    padding: 52px 48px;
+    border-radius: 10px;
+
+}
+
+.card-contact h2 {
+    color: #1ED760;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    text-align: center;
+}
+
+.bg-color {
+    background: #ffffff;
+    border-radius: 0;
+    height: 75px !important;
+}
+
+.form-floating .text-color {
+    color: #717171;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 18px; /* 112.5% */
+}
+
+.button-kontak {
+    width: 100%;
+    height: 50px;
+    border: none;
+    border-radius: 16px;
+    background-color: #1ED760;
+    color: #FFF;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+
+/* footer */
+
+footer {
+    width: 100%;
+    height: 270px;
+    background: #000;
+    color: #F3FFF4;
+}
+
+footer a {
+    color: #FFF;
+    font-style: 20px;
+    text-decoration: none;
+}
+
+.copyright {
+    color: #FFF;
+    font-size: 14px;
+    bottom: 1%; /*agar di bawah*/
+}
+
+.rating {
+    display: inline-block;
+  }
+  
+  .rating input {
+    display: none;
+  }
+  
+  .rating label {
+    float: right;
+    cursor: pointer;
+    color: #aaa0a0;
+    transition: color 0.3s;
+  }
+  
+  .rating label:before {
+    content: '\2605';
+    font-size: 30px;
+  }
+  
+  .rating input:checked ~ label,
+  .rating label:hover,
+  .rating label:hover ~ label {
+    color: rgb(55, 226, 83);
+    transition: color 0.3s;
+  }
+
+#preloader {
+    background: #000;
+    height: 100vh;
+    width: 100%;
+    position: fixed;
+    z-index: 100;
+}
+
+
+/* login */
+
+
+.login {
+    height: 100vh;
+}
+
+.header h1 {
+    color: #56ca49;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+
+.header p {
+    color: #ffffff;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+
+}
+
+.login-form label {
+
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: #C4C4C4;
+}
+
+.login-form input {
+    background: #fff;
+    border: 1px solid #BCBCBC;
+    box-sizing: border-box;
+    border-radius: 8px;
+}
+  
+
+.login-form a {
+    color: #737373;
+    font-family: Poppins;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+/* break points */
+
+@media screen and (max-width : 922px) {
+    .hero-tagline h1 {
+        line-height: 48px;
+    }
+
+    .hero-tagline p {
+        font-size: 14px;
+        line-height: 25px;
+    }
+    .card-layanan h3{
+        font-size: 21px;
+    }
+    
+    .card-layanan p{
+        font-size: 12px;
+    }
+
+    .input-cari .button-secondary {
+        width: 120px;
+        font-size: 14px;
+        border-radius: 0;
+    }
+    
+    .input-cari .button-primary {
+        font-size: 24px;
+        border-radius: 0 0 10px 10px;
+    }
+
+    .button-fitur {
+        width: 100%;
+    }
+
+    #contact h3 {
+        font-size: 30px;
+        width: 100%;
+    }  
+
+    .card-contact {
+        width: 100%;
+        height: auto;
+    }
+    
+    .card-contact h2 {
+        font-size: 32px;
+        line-height: 42px;
+    }
+}
+
+@media screen and (max-width : 576px) {
+    .img-hero {
+        width: 75%;
+        height: auto;
+    }
+
+    .hero-tagline h1 {
+        line-height: 52px;
+    }
+
+    h2 {
+        font-size: 34px;
+    }
+
+    .sub-title {
+        font-style: 16px;
+    }
+
+    .card-layanan {
+        margin: 15px 0 15px 0;
+    }
+
+    #search h2 {
+        font-size: 42px;
+        line-height: 52px;
+    }
+    
+    #search p {
+        font-size: 18px;
+        line-height: 24px;
+    }
+
+    .input-cari .button-secondary {
+        height: 60px;
+        width: 50%;
+        border-radius: 0;
+    }
+
+    .input-cari .button-primary {
+        height: 60px;
+        width: 30px;
+        font-size: 10px;
+        border-radius: 0;
+    }
+
+    .input-cari .form-control {
+        height: 60px;
+    }
+}
+
+@media screen and (max-width : 350px) {
+
+}
